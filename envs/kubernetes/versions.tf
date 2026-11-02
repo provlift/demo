@@ -1,0 +1,15 @@
+# Never initialised in the demo, so "provlift drift" reports a missing lock file.
+terraform {
+  required_version = ">= 1.6"
+
+  required_providers {
+    kubernetes = {
+      source  = "hashicorp/kubernetes"
+      version = "~> 2.30.0"
+    }
+    helm = {
+      source  = "hashicorp/helm"
+      version = "~> 2.14.0"
+    }
+  }
+}

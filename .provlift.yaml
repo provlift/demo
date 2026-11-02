@@ -1,0 +1,12 @@
+# The OpenTofu stack has its own config; run it with: provlift -C opentofu ...
+exclude:
+  - opentofu
+
+# Two platforms keep the demo upgrade fast. Real repos usually add darwin_arm64.
+platforms:
+  - windows_amd64
+  - linux_amd64
+
+providers:
+  max_level:
+    hashicorp/helm: minor   # hold Helm below 3.x until the migration is scheduled

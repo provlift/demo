@@ -1,0 +1,7 @@
+# Drive OpenTofu: bare sources such as "hashicorp/aws" resolve to registry.opentofu.org.
+terraform:
+  binary: tofu
+
+platforms:
+  - windows_amd64
+  - linux_amd64
